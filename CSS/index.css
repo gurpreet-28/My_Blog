@@ -238,6 +238,11 @@ body {
     --sec-font: "Roboto", sans-serif;
   }
 
+  .main-img {
+    width: 3rem;
+    height: 3rem;
+  }
+
   .ham-menu {
     width: 2.2rem;
     height: 2.2rem;
@@ -249,7 +254,7 @@ body {
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -301,17 +306,10 @@ body {
     height: 100%;
   }
 
-  /* #work {
-    border: 2px solid green;
-  } */
-
   #work div {
     margin-top: 5rem;
     text-align: center;
     height: 2rem;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
   }
 
   #work h1 {
@@ -431,6 +429,10 @@ body {
     --main-font: "Rubik", sans-serif;
     --sec-font: "Roboto", sans-serif;
   }
+  .main-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 
   .ham-menu {
     width: 2.2rem;
@@ -443,7 +445,7 @@ body {
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
   }
 
