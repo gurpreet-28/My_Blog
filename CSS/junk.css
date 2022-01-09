@@ -1,0 +1,1066 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #fbf7ed;
+}
+
+@media screen and (min-width: 981px) and (max-width: 1600px) {
+  :root {
+    font-size: 16px;
+    --primary-color: #004c3f;
+    --bg-color: #008060;
+    --main-font: "Rubik", sans-serif;
+    --sec-font: "Roboto", sans-serif;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  header li {
+    margin: 0 1rem;
+  }
+
+  header a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: 0.2rem 0.7rem;
+  }
+
+  header li a:hover {
+    color: white;
+    background-color: var(--bg-color);
+    box-shadow: 0.1rem 0.1rem 0.3rem gray;
+  }
+
+  .ham-menu {
+    display: none;
+  }
+
+  #about {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about div {
+    width: 50%;
+    height: 569px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .name-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name {
+    color: var(--primary-color);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 3rem;
+  }
+
+  .description {
+    font-family: "Rubik", sans-serif;
+    color: var(--primary-color);
+    margin-top: 0.2rem;
+    font-size: 2rem;
+  }
+
+  .space-tag {
+    border-radius: 0.5rem;
+    padding: 1.4rem;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--bg-color);
+  }
+
+  #work {
+    height: 100vh;
+  }
+
+  #work div {
+    margin-top: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #work h1 {
+    color: var(--primary-color);
+    font-family: "Rubik";
+    font-size: 2rem;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .icons img {
+    margin: 0.01rem 1.5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  #social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  #contact h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-family: "Ubuntu";
+    margin-bottom: 4rem;
+  }
+
+  #contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  #form {
+    border: 1px solid var(--bg-color);
+    max-width: 24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0.2rem 0.3rem 0.3rem rgb(150, 150, 150);
+  }
+
+  #name,
+  #email {
+    height: 2.2rem;
+    width: 15rem;
+    padding-left: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    border: 1.5px solid #004c3f;
+    border-radius: 0.5rem;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+  }
+
+  #message {
+    width: 20rem;
+    height: 12rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    border: 1.5px solid #004c3f;
+    border-radius: 0.5rem;
+    margin-top: 0.4rem;
+    padding-left: 0.8rem;
+  }
+
+  input[type="submit"] {
+    width: 15rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    background-color: #008060;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0.2rem 0.2rem 0.3rem grey;
+  }
+
+  input[type="submit"]:hover {
+    background-color: var(--primary-color);
+  }
+
+  footer {
+    background-color: var(--bg-color);
+    width: 80%;
+    margin: 5px auto;
+    border-radius: 1rem;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer h2 {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 351px) and (max-width: 640px) {
+  :root {
+    font-size: 15px;
+    --primary-color: #004c3f;
+    --bg-color: #008060;
+    --main-font: "Rubik", sans-serif;
+    --sec-font: "Roboto", sans-serif;
+  }
+
+  .main-img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .ham-menu {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0.5rem;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-div {
+    display: none;
+  }
+
+  .name-div {
+    width: 90%;
+    margin: 2.5rem auto;
+  }
+
+  .name-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 2.8rem;
+    color: #004c3f;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .description {
+    font-family: "Rubik", sans-serif;
+    color: #004c3f;
+    margin-top: 0.2rem;
+    font-size: 2rem;
+  }
+
+  .space-tag {
+    border-radius: 0.5rem;
+    padding: 1.4rem;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #008060;
+  }
+
+  .img-div {
+    width: 90%;
+    margin: auto;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #work div {
+    margin-top: 5rem;
+    text-align: center;
+    height: 2rem;
+  }
+
+  #work h1 {
+    color: var(--primary-color);
+    font-family: "Rubik";
+    font-size: 1.6rem;
+  }
+
+  #contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  #form {
+    width: 90%;
+    border: 1px solid var(--bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0.2rem 0.3rem 0.3rem rgb(150, 150, 150);
+    border: 1px solid #008060;
+  }
+
+  #name,
+  #email {
+    height: 2.2rem;
+    width: 70%;
+    padding-left: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    border: 1.5px solid #004c3f;
+    border-radius: 0.5rem;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+  }
+
+  #message {
+    width: 94%;
+    height: 12rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    border: 1.5px solid #004c3f;
+    border-radius: 0.5rem;
+    margin-top: 0.4rem;
+    padding-left: 0.8rem;
+  }
+
+  input[type="submit"] {
+    width: 15rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    background-color: #008060;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0.2rem 0.2rem 0.3rem grey;
+  }
+
+  input[type="submit"]:hover {
+    background-color: var(--primary-color);
+  }
+
+  #social-icons {
+    margin-bottom: 30px;
+  }
+
+  .icons img {
+    margin: 0.01rem 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  #social-icons h1 {
+    font-size: 1.7rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    color: #004c3f;
+    text-align: center;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    background-color: #008060;
+    width: 80%;
+    margin: 5px auto;
+    border-radius: 1rem;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer h2 {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  * root {
+    font-size: 5px;
+    --primary-color: #004c3f;
+    --bg-color: #008060;
+    --main-font: "Rubik", sans-serif;
+    --sec-font: "Roboto", sans-serif;
+  }
+  .main-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .ham-menu {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0.5rem;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-div {
+    display: none;
+  }
+
+  .name-div {
+    width: 90%;
+    margin: 2.5rem auto;
+  }
+
+  .name-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 2rem;
+    color: #004c3f;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .description {
+    font-family: "Rubik", sans-serif;
+    color: #004c3f;
+    margin-top: 0.2rem;
+    font-size: 1.5rem;
+  }
+
+  .space-tag {
+    border-radius: 0.5rem;
+    padding: 1.4rem;
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    color: white;
+    background-color: #008060;
+  }
+
+  .img-div {
+    width: 90%;
+    margin: auto;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #work div {
+    margin-top: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #work h1 {
+    color: var(--primary-color);
+    font-family: "Rubik";
+    font-size: 1.3rem;
+  }
+
+  #contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  #form {
+    border: 1px solid var(--bg-color);
+    max-width: 24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0.2rem 0.3rem 0.3rem rgb(150, 150, 150);
+    border: 1px solid #008060;
+    width: 90%;
+  }
+
+  #name,
+  #email {
+    height: 2.2rem;
+    width: 70%;
+    padding-left: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    border: 1.5px solid #004c3f;
+    border-radius: 0.5rem;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+  }
+
+  #message {
+    width: 94%;
+    height: 12rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    border: 1.5px solid #004c3f;
+    border-radius: 0.5rem;
+    margin-top: 0.4rem;
+    padding-left: 0.8rem;
+  }
+
+  input[type="submit"] {
+    width: 15rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    background-color: #008060;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0.2rem 0.2rem 0.3rem grey;
+  }
+
+  input[type="submit"]:hover {
+    background-color: var(--primary-color);
+  }
+
+  .icons img {
+    margin: 0.01rem 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  #social-icons h1 {
+    font-size: 1.7rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    color: #004c3f;
+    text-align: center;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    background-color: #008060;
+    width: 80%;
+    margin: 5px auto;
+    border-radius: 1rem;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer h2 {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  body {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  :root {
+    font-size: 20px;
+    --primary-color: #004c3f;
+    --bg-color: #008060;
+    --main-font: "Rubik", sans-serif;
+    --sec-font: "Roboto", sans-serif;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  header li {
+    margin: 0 1rem;
+  }
+
+  header a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: 0.1rem 0.6rem;
+  }
+
+  header a:hover {
+    color: white;
+    background-color: var(--bg-color);
+    box-shadow: 0.1rem 0.1rem 0.3rem gray;
+  }
+
+  .ham-menu {
+    display: none;
+  }
+
+  #about {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about div {
+    width: 50%;
+    height: 569px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .name-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name {
+    color: var(--primary-color);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 3rem;
+  }
+
+  .description {
+    font-family: "Rubik", sans-serif;
+    color: var(--primary-color);
+    margin-top: 0.2rem;
+    font-size: 2rem;
+  }
+
+  .space-tag {
+    border-radius: 0.5rem;
+    padding: 1.4rem;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--bg-color);
+  }
+
+  #work {
+    height: 100vh;
+  }
+
+  #work div {
+    margin-top: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #work h1 {
+    color: var(--primary-color);
+    font-family: "Rubik";
+    font-size: 2rem;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  #social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  #contact h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-family: "Ubuntu";
+    margin-bottom: 4rem;
+  }
+
+  .icons img {
+    margin: 0.01rem 1.5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  #contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  #form {
+    border: 1px solid var(--bg-color);
+    max-width: 24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0.2rem 0.3rem 0.3rem rgb(150, 150, 150);
+  }
+
+  #name,
+  #email {
+    height: 2.2rem;
+    width: 15rem;
+    padding-left: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    border: 1.5px solid #004c3f;
+    border-radius: 0.5rem;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+  }
+
+  #message {
+    width: 20rem;
+    height: 12rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    border: 1.5px solid #004c3f;
+    border-radius: 0.5rem;
+    margin-top: 0.4rem;
+    padding-left: 0.8rem;
+  }
+
+  input[type="submit"] {
+    width: 15rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    background-color: #008060;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0.2rem 0.2rem 0.3rem grey;
+  }
+
+  input[type="submit"]:hover {
+    background-color: var(--primary-color);
+  }
+
+  .icons img {
+    margin: 0.01rem 1.5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  footer {
+    background-color: var(--bg-color);
+    width: 80%;
+    margin: 5px auto;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+  }
+
+  footer h2 {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 980px) {
+  :root {
+    font-size: 14px;
+    --primary-color: #004c3f;
+    --bg-color: #008060;
+    --main-font: "Rubik", sans-serif;
+    --sec-font: "Roboto", sans-serif;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  header li {
+    margin: 0 1rem;
+  }
+
+  header a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: 0.1rem 0.6rem;
+  }
+
+  header a:hover {
+    color: white;
+    background-color: var(--bg-color);
+    box-shadow: 0.1rem 0.1rem 0.3rem gray;
+  }
+
+  .ham-menu {
+    display: none;
+  }
+
+  #about {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about div {
+    width: 50%;
+    height: 569px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .name-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name {
+    color: var(--primary-color);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 3rem;
+  }
+
+  .description {
+    font-family: "Rubik", sans-serif;
+    color: var(--primary-color);
+    margin-top: 0.2rem;
+    font-size: 2rem;
+  }
+
+  .space-tag {
+    border-radius: 0.5rem;
+    padding: 1.4rem;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--bg-color);
+  }
+
+  #work {
+    height: 100vh;
+  }
+
+  #work div {
+    margin-top: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #work h1 {
+    color: var(--primary-color);
+    font-family: "Rubik";
+    font-size: 2rem;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  #social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  #contact h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-family: "Ubuntu";
+    margin-bottom: 4rem;
+  }
+
+  .icons img {
+    margin: 0.01rem 1.5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  #contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  #form {
+    border: 1px solid var(--bg-color);
+    max-width: 24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0.2rem 0.3rem 0.3rem rgb(150, 150, 150);
+  }
+
+  #name,
+  #email {
+    height: 2.2rem;
+    width: 15rem;
+    padding-left: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    border: 1.5px solid #004c3f;
+    border-radius: 0.5rem;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+  }
+
+  #message {
+    width: 20rem;
+    height: 12rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    border: 1.5px solid #004c3f;
+    border-radius: 0.5rem;
+    margin-top: 0.4rem;
+    padding-left: 0.8rem;
+  }
+
+  input[type="submit"] {
+    width: 15rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    background-color: #008060;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0.2rem 0.2rem 0.3rem grey;
+  }
+
+  input[type="submit"]:hover {
+    background-color: var(--primary-color);
+  }
+
+  .icons img {
+    margin: 0.01rem 1.5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  footer {
+    background-color: var(--bg-color);
+    width: 80%;
+    margin: 5px auto;
+    border-radius: 1rem;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer h2 {
+    color: white;
+  }
+}
